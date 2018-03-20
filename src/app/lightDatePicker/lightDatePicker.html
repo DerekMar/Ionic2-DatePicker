@@ -1,0 +1,17 @@
+<div (swipe)="swipeEvent($event)"> 
+    <ion-row text-center class="calendar_head" (click)="changeMin()">
+     <ion-col color="primary">周日</ion-col>
+     <ion-col>周一</ion-col>
+     <ion-col>周二</ion-col>
+     <ion-col>周三</ion-col>
+     <ion-col>周四</ion-col>
+     <ion-col>周五</ion-col>
+     <ion-col>周六</ion-col>
+   </ion-row>
+   <ion-row text-center class="calendar_week" [hidden]="minimize"  *ngFor="let week of month.Weeks" >
+     <ion-col *ngFor="let day of week.Day" tappable (click)="onclick(day)"><div [ngClass]="day.cssClass">{{day.time !== 0? day.time: ''}}</div></ion-col>
+   </ion-row>
+  <ion-row text-center class="calendar_week" [hidden]="!minimize">
+     <ion-col *ngFor="let day of week.Day" tappable (click)="onclick(day)"><div [ngClass]="day.cssClass">{{day.time !== 0? day.time: ''}}</div></ion-col>
+   </ion-row>   
+</div>

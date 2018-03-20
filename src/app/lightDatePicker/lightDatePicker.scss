@@ -1,0 +1,90 @@
+lightDatePicker{
+    .scroll-content{
+        background-color: #f8f8f8;
+        margin-bottom: 3.6rem;
+    }
+    .list-header{
+        margin-bottom: 0px;
+    }
+    .item-md,.item-ios{
+        font-size: 1.4rem;
+        border-bottom: solid 1px #ddd;
+    }
+    .label-md,.label-ios{
+        margin:0px 8px 0px 0;
+    }
+    .calendar_head .col{
+        padding: 12px 0px;
+        color: #666;
+    }
+    .calendar_week{
+        .col{
+            text-align: center;
+        }
+        .date_cell{
+            max-width: 40px;
+            max-height: 40px;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            @include border-radius(50%);
+            //background:#ddd;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .date_cell:hover{
+            //background: #dedede;
+        }
+        .today,.event-date{
+            border:solid 1px #009688;
+        }
+        .pointer_events_none{
+            pointer-events: none;
+            //color: #aaa !important;
+            color: #aaa;
+        }
+        .selected_date{
+            background-color: #009688;
+            color: #fff;
+            font-weight: bold;
+        }
+    } 
+    
+    .list .item-block .item-inner{
+        border-bottom: 0px;
+    }
+    .calendarEvent{
+        margin-top: 12px;
+    }
+    .item.calendarEvent_item{
+        padding: 12px 4px 12px 12px;
+
+        .input-wrapper span{
+            font-size: 10px;
+            color: #aaa;
+        }
+        i.dot{
+            width: 4px;
+            height: 4px;
+            line-height: 30px;
+            display: inline-block;
+            @include border-radius(50%);
+            margin: 0 4px 3px 0;
+            background: #ffc900;
+        }
+        p{
+            margin-top: 4px;
+        }
+    }
+}
+
+@media (min-width:768px){
+    work-detail{
+        .item-md,.item-ios{
+            font-size: 1.6rem;
+        }
+        .label-md,.label-ios{
+            margin:6px 8px 6px 0;
+        }
+    }
+}

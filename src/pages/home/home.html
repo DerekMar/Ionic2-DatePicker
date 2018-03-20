@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+        {{year + '年' + month + '月'}}
+      </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <lightDatePicker [selected]="selectfunc" [curMonth]="month"  [curYear]="year"  [swipe]="swipefunc"  (curMonthChange)="MonthChange($event)"  (curYearChange)="YearChange($event)" [hightlightdata]='hightlightdata' #lightDatePicker></lightDatePicker> 
+</ion-content>
