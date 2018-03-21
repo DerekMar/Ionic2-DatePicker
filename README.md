@@ -2,13 +2,13 @@
 基于移动混合开发框架Ionic2的 日期选择组件
 
 # 特性
- ## 最大特色：上下滑能够切换月份显示和星期显示，增加其它部分的布局控件；
- ## 能够高亮自定义日期，并且月份和星期切换时，按照当前选择的日期为目标
- ## 能够自定义触发事件，滑动事件、时间选择事件
+  最大特色：上下滑能够切换月份显示和星期显示，增加其它部分的布局控件；
+  能够高亮自定义日期，并且月份和星期切换时，按照当前选择的日期为目标
+  能够自定义触发事件，滑动事件、时间选择事件
 
 # 属性
 ```
- <lightDatePicker [selected]="selectfunc" [curMonth]="month"  [curYear]="year"  [swipe]="swipefunc"                     (curMonthChange)="MonthChange($event)"  (curYearChange)="YearChange($event)" [hightlightdata]       ='hightlightdata' #lightDatePicker></lightDatePicker> 
+ <lightDatePicker [selected]="selectfunc" [curMonth]="month"  [curYear]="year"  [swipe]="swipefunc" (curMonthChange)="MonthChange($event)" (curYearChange)="YearChange($event)" [hightlightdata]='hightlightdata' #lightDatePicker></lightDatePicker> 
 ```
 selected: 日期被选择事件
 curMonth: 当前月份
